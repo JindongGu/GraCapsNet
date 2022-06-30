@@ -29,7 +29,7 @@ def get_args():
     parser.add_argument('--out_dim', default=32*32*3, type=int, help='the dim of reconstructed image')
     parser.add_argument('--loss', default='Marg', type=str, help='loss function')
     
-    parser.add_argument('--epochs', default=100, type=int)
+    parser.add_argument('--epochs', default=150, type=int)
     parser.add_argument('--lr_schedule', default='constant', type=str, choices=['multistep', 'constant'])
     parser.add_argument('--lr_decay_epochs', default=None, type=str)
     parser.add_argument('--lr_decay_rate', type=float, default=0.1, help='decay rate for learning rate')

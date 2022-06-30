@@ -169,9 +169,6 @@ class GraCapsNet(nn.Module):
 
 def load_model(args):
     model = GraCapsNet(in_c=3, map_size=14, out_dim=args.out_dim, reconstructed=args.reconstructed)
-      
-    total = sum([param.nelement() for param in model.parameters()])
-    print('  + Number of params: %.4fM' % (total / 1e6))
     
     return model
 
