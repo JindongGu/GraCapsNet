@@ -1,5 +1,5 @@
 
-# Implementation of <a href="https://arxiv.org/pdf/2012.01674.pdf">GraCapsNet</a>: Interpretable Graph Capsule Networks for Object Recognition 
+# Implementation of <a href="https://ojs.aaai.org/index.php/AAAI/article/view/16237/16044">GraCapsNet</a>: Interpretable Graph Capsule Networks for Object Recognition 
 
 GraCapsNets: In CapsNets, the primary capsules represent object parts, e.g., eyes and nose of a cat. In our GraCapsNets, we explicitly model the relationship between the primary capsules (i.e., part-part relationship) with graphs. Then, the followed graph pooling operations pool relevant object parts from the graphs to make a classification vote. 
 
