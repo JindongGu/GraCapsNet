@@ -21,7 +21,7 @@ def uniform(tensor, bound = 10.):
         tensor.data.uniform_(-bound, bound)
 
 
-def compute_adjacency_matrix_images(coord, sigma=0.1):
+def compute_adjacency_matrix_images(coord, sigma=0.01):
     coord = coord.reshape(-1, 2)
     dist = cdist(coord, coord)
     A = np.exp(- dist / (sigma * np.pi) ** 2)
